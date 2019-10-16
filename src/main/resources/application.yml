@@ -1,0 +1,23 @@
+server:
+  port: 8686
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/  #静态页面
+    cache: false #关闭缓存
+    suffix: .html
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      suffix: .html
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/user?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #其他数据源
+  slave:
+    url: jdbc:mysql://127.0.0.1:3306/userinfo?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
