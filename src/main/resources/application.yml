@@ -21,8 +21,3 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: true
-  main:
-    allow-bean-definition-overriding: true
