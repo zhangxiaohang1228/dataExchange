@@ -14,4 +14,6 @@ import java.util.List;
 public interface UserService {
 
   public List<User> selectAll();
+
+  List<User> getAll();
 }

@@ -25,12 +25,12 @@ import java.util.Properties;
  * @desc: 第一数据源的对应
  */
 
-@Configuration
-@EnableJpaRepositories(
-        basePackages = {"com.zxh.dataexchange.mapper"},// 1. dao 层所在的包
-        entityManagerFactoryRef = "firstEntityManagerFactory",
-        transactionManagerRef = "firstTransactionManager")
-@EnableTransactionManagement
+//@Configuration
+//@EnableJpaRepositories(
+//        basePackages = {"com.zxh.dataexchange.mapper"},// 1. dao 层所在的包
+//        entityManagerFactoryRef = "firstEntityManagerFactory",
+//        transactionManagerRef = "firstTransactionManager")
+//@EnableTransactionManagement
 public class FirstConfig {
 
   @Autowired

@@ -1,6 +1,8 @@
 package com.zxh.dataexchange.service.impl;
 
 import com.zxh.dataexchange.bean.User;
+import com.zxh.dataexchange.core.annotation.SwitchDataSource;
+import com.zxh.dataexchange.core.commons.DataSourceNames;
 import com.zxh.dataexchange.mapper.UserMapper;
 import com.zxh.dataexchange.service.UserService;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,12 @@ public class UserServiceImpl implements UserService {
   UserMapper userMapper;
 
   public List<User> selectAll(){
+    return userMapper.findAll();
+  }
+
+  @SwitchDataSource(dataSourceName = DataSourceNames.OTHER)
+  @Override
+  public List<User> getAll() {
     return userMapper.findAll();
   }
 

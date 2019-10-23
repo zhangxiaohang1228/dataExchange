@@ -16,16 +16,16 @@ import javax.sql.DataSource;
  * @Date: 2019/10/16 22:50
  * @desc
  */
-@Configuration
-@EnableTransactionManagement
+//@Configuration
+//@EnableTransactionManagement
 public class TransactionManagersConfig {
-  @Autowired
+  //Autowired
   EntityManagerFactory emf;
-  @Autowired
-  @Qualifier("defaultDataSource")
+  //Autowired
+  //@Qualifier("defaultDataSource")
   private DataSource dataSource;
 
-  @Bean(name = "transactionManager")
+  //@Bean(name = "transactionManager")
   public PlatformTransactionManager transactionManager() {
     JpaTransactionManager tm =
             new JpaTransactionManager();

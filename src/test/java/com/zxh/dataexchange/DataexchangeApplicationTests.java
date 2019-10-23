@@ -25,6 +25,11 @@ public class DataexchangeApplicationTests {
     System.out.println(users);
 
 
+    List<User> users2 =  userService.getAll();
+
+    System.out.println(users2);
+
+
   }
 
 

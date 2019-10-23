@@ -9,8 +9,7 @@ import javax.persistence.Table;
  * @Date: 2019/10/16 21:10
  * @desc
  */
-@Table(name = "user")
-@Entity
+
 public class User {
 
   @Id
