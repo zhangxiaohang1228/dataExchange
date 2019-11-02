@@ -33,7 +33,6 @@ import java.util.Map;
  * @Description: 数据源
  */
 @Configuration
-@MapperScan({"com.zxh.dataexchange.mapper"})
 public class DaoConfiguration {
 
 
